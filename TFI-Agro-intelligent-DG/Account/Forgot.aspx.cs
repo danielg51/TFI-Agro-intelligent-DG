@@ -31,7 +31,7 @@ namespace TFI_Agro_intelligent_DG.Account
                 // Send email with the code and the redirect to reset password page
                 string code = manager.GeneratePasswordResetToken(user.Id);
                 string callbackUrl = IdentityHelper.GetResetPasswordRedirectUrl(code, Request);
-                manager.SendEmail(user.Id, "Reset Password", "Please reset your password by clicking <a href=\"" + callbackUrl + "\">here</a>.");
+                manager.SendEmail(user.Id, "Reset Password", "Please reset your password by clicking " + callbackUrl);
                 loginForm.Visible = false;
                 DisplayEmail.Visible = true;
             }

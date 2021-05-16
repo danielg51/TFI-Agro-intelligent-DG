@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Net.Mail;
 using System.Security.Claims;
 using System.Threading.Tasks;
 using Microsoft.AspNet.Identity;
@@ -15,7 +16,12 @@ namespace TFI_Agro_intelligent_DG
         public Task SendAsync(IdentityMessage message)
         {
             // Plug in your email service here to send an email.
-            return Task.FromResult(0);
+            SmtpClient client = new SmtpClient();
+            //client.UseDefaultCredentials = false;
+            return client.SendMailAsync("test@gmail.com",
+                                        message.Destination,
+                                        message.Subject,
+                                        message.Body);
         }
     }
 
