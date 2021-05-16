@@ -1,0 +1,12 @@
+D:\Users\502001192\Documents\TFI\TFI-Agro-intelligent-DG\TFI-Agro-intelligent-DG.Negocio\bin\Debug\net5.0\TFI-Agro-intelligent-DG.Negocio.deps.json
+D:\Users\502001192\Documents\TFI\TFI-Agro-intelligent-DG\TFI-Agro-intelligent-DG.Negocio\bin\Debug\net5.0\TFI-Agro-intelligent-DG.Negocio.dll
+D:\Users\502001192\Documents\TFI\TFI-Agro-intelligent-DG\TFI-Agro-intelligent-DG.Negocio\bin\Debug\net5.0\ref\TFI-Agro-intelligent-DG.Negocio.dll
+D:\Users\502001192\Documents\TFI\TFI-Agro-intelligent-DG\TFI-Agro-intelligent-DG.Negocio\bin\Debug\net5.0\TFI-Agro-intelligent-DG.Negocio.pdb
+D:\Users\502001192\Documents\TFI\TFI-Agro-intelligent-DG\TFI-Agro-intelligent-DG.Negocio\obj\Debug\net5.0\TFI-Agro-intelligent-DG.Negocio.csprojAssemblyReference.cache
+D:\Users\502001192\Documents\TFI\TFI-Agro-intelligent-DG\TFI-Agro-intelligent-DG.Negocio\obj\Debug\net5.0\TFI-Agro-intelligent-DG.Negocio.GeneratedMSBuildEditorConfig.editorconfig
+D:\Users\502001192\Documents\TFI\TFI-Agro-intelligent-DG\TFI-Agro-intelligent-DG.Negocio\obj\Debug\net5.0\TFI-Agro-intelligent-DG.Negocio.AssemblyInfoInputs.cache
+D:\Users\502001192\Documents\TFI\TFI-Agro-intelligent-DG\TFI-Agro-intelligent-DG.Negocio\obj\Debug\net5.0\TFI-Agro-intelligent-DG.Negocio.AssemblyInfo.cs
+D:\Users\502001192\Documents\TFI\TFI-Agro-intelligent-DG\TFI-Agro-intelligent-DG.Negocio\obj\Debug\net5.0\TFI-Agro-intelligent-DG.Negocio.csproj.CoreCompileInputs.cache
+D:\Users\502001192\Documents\TFI\TFI-Agro-intelligent-DG\TFI-Agro-intelligent-DG.Negocio\obj\Debug\net5.0\TFI-Agro-intelligent-DG.Negocio.dll
+D:\Users\502001192\Documents\TFI\TFI-Agro-intelligent-DG\TFI-Agro-intelligent-DG.Negocio\obj\Debug\net5.0\ref\TFI-Agro-intelligent-DG.Negocio.dll
+D:\Users\502001192\Documents\TFI\TFI-Agro-intelligent-DG\TFI-Agro-intelligent-DG.Negocio\obj\Debug\net5.0\TFI-Agro-intelligent-DG.Negocio.pdb
