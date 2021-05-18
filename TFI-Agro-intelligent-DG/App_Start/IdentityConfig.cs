@@ -17,8 +17,7 @@ namespace TFI_Agro_intelligent_DG
         {
             // Plug in your email service here to send an email.
             SmtpClient client = new SmtpClient();
-            //client.UseDefaultCredentials = false;
-            return client.SendMailAsync("test@gmail.com",
+                      return client.SendMailAsync("agrointelligentservicios@gmail.com",
                                         message.Destination,
                                         message.Subject,
                                         message.Body);
