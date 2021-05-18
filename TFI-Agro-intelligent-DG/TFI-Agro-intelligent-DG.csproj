@@ -364,6 +364,7 @@
     <Compile Include="Account\VerifyPhoneNumber.aspx.designer.cs">
       <DependentUpon>VerifyPhoneNumber.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Helpers\UserHelper.cs" />
     <Compile Include="Monitoreo\AgregarDispositivo.aspx.cs">
       <DependentUpon>AgregarDispositivo.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

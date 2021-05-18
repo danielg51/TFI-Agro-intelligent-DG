@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Forgot password" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Forgot.aspx.cs" Inherits="TFI_Agro_intelligent_DG.Account.ForgotPassword" Async="true" %>
+﻿<%@ Page Title="¿ Olvidó tu contraseña ?" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Forgot.aspx.cs" Inherits="TFI_Agro_intelligent_DG.Account.ForgotPassword" Async="true" %>
 
 <asp:Content runat="server" ID="BodyContent" ContentPlaceHolderID="MainContent">
     <h2><%: Title %>.</h2>
@@ -7,7 +7,7 @@
         <div class="col-md-8">
             <asp:PlaceHolder id="loginForm" runat="server">
                 <div class="form-horizontal">
-                    <h4>Forgot your password?</h4>
+                    <h4>¿Olvidó su contraseña?</h4>
                     <hr />
                     <asp:PlaceHolder runat="server" ID="ErrorMessage" Visible="false">
                         <p class="text-danger">
@@ -19,7 +19,7 @@
                         <div class="col-md-10">
                             <asp:TextBox runat="server" ID="Email" CssClass="form-control" TextMode="Email" />
                             <asp:RequiredFieldValidator runat="server" ControlToValidate="Email"
-                                CssClass="text-danger" ErrorMessage="The email field is required." />
+                                CssClass="text-danger" ErrorMessage="El campo e-mail es requerido." />
                         </div>
                     </div>
                     <div class="form-group">
@@ -31,7 +31,7 @@
             </asp:PlaceHolder>
             <asp:PlaceHolder runat="server" ID="DisplayEmail" Visible="false">
                 <p class="text-info">
-                    Please check your email to reset your password.
+                    Por favor verifique su correo para resetear su contraseña.
                 </p>
             </asp:PlaceHolder>
         </div>
