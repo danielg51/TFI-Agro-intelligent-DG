@@ -2382,6 +2382,16 @@
         "runtime": {
           "bin/placeholder/TFI-Agro-intelligent-DG.Negocio.dll": {}
         }
+      },
+      "TFI-Agro-intelligent-DG.Seguridad/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/TFI-Agro-intelligent-DG.Seguridad.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TFI-Agro-intelligent-DG.Seguridad.dll": {}
+        }
       }
     }
   },
@@ -7863,14 +7873,21 @@
       "type": "project",
       "path": "../TFI-Agro-intelligent-DG.Negocio/TFI-Agro-intelligent-DG.Negocio.csproj",
       "msbuildProject": "../TFI-Agro-intelligent-DG.Negocio/TFI-Agro-intelligent-DG.Negocio.csproj"
+    },
+    "TFI-Agro-intelligent-DG.Seguridad/1.0.0": {
+      "type": "project",
+      "path": "../TFI-Agro-intelligent-DG.Seguridad/TFI-Agro-intelligent-DG.Seguridad.csproj",
+      "msbuildProject": "../TFI-Agro-intelligent-DG.Seguridad/TFI-Agro-intelligent-DG.Seguridad.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
       "DotNetToolkit >= 1.7.0",
+      "Microsoft.EntityFrameworkCore.Design >= 5.0.2",
       "Microsoft.EntityFrameworkCore.SqlServer >= 5.0.2",
       "Microsoft.EntityFrameworkCore.Tools >= 5.0.2",
-      "TFI-Agro-intelligent-DG.Negocio >= 1.0.0"
+      "TFI-Agro-intelligent-DG.Negocio >= 1.0.0",
+      "TFI-Agro-intelligent-DG.Seguridad >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -7902,6 +7919,9 @@
           "projectReferences": {
             "D:\\Users\\502001192\\source\\repos\\TFI-Agro-intelligent-DG\\TFI-Agro-intelligent-DG.Negocio\\TFI-Agro-intelligent-DG.Negocio.csproj": {
               "projectPath": "D:\\Users\\502001192\\source\\repos\\TFI-Agro-intelligent-DG\\TFI-Agro-intelligent-DG.Negocio\\TFI-Agro-intelligent-DG.Negocio.csproj"
+            },
+            "D:\\Users\\502001192\\source\\repos\\TFI-Agro-intelligent-DG\\TFI-Agro-intelligent-DG.Seguridad\\TFI-Agro-intelligent-DG.Seguridad.csproj": {
+              "projectPath": "D:\\Users\\502001192\\source\\repos\\TFI-Agro-intelligent-DG\\TFI-Agro-intelligent-DG.Seguridad\\TFI-Agro-intelligent-DG.Seguridad.csproj"
             }
           }
         }
@@ -7919,6 +7939,12 @@
           "DotNetToolkit": {
             "target": "Package",
             "version": "[1.7.0, )"
+          },
+          "Microsoft.EntityFrameworkCore.Design": {
+            "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "[5.0.2, )"
           },
           "Microsoft.EntityFrameworkCore.SqlServer": {
             "target": "Package",

@@ -11,6 +11,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TFI-Agro-intelligent-DG.Neg
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TFI-Agro-Itelligent-DG.RestAPI", "TFI-Agro-Itelligent-DG.RestAPI\TFI-Agro-Itelligent-DG.RestAPI.csproj", "{9C831020-A636-4661-87A2-1296445AF0A9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TFI-Agro-intelligent-DG.Seguridad", "TFI-Agro-intelligent-DG.Seguridad\TFI-Agro-intelligent-DG.Seguridad.csproj", "{DFAE62E5-871E-43EA-AECE-CE3CB34F94B6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{9C831020-A636-4661-87A2-1296445AF0A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9C831020-A636-4661-87A2-1296445AF0A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9C831020-A636-4661-87A2-1296445AF0A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DFAE62E5-871E-43EA-AECE-CE3CB34F94B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFAE62E5-871E-43EA-AECE-CE3CB34F94B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFAE62E5-871E-43EA-AECE-CE3CB34F94B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFAE62E5-871E-43EA-AECE-CE3CB34F94B6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

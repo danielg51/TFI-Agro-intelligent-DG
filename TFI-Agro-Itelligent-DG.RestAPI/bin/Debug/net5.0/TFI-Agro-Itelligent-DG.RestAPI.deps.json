@@ -1842,7 +1842,8 @@
         "dependencies": {
           "DotNetToolkit": "1.7.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "5.0.2",
-          "TFI-Agro-intelligent-DG.Negocio": "1.0.0"
+          "TFI-Agro-intelligent-DG.Negocio": "1.0.0",
+          "TFI-Agro-intelligent-DG.Seguridad": "1.0.0"
         },
         "runtime": {
           "TFI-Agro-intelligent-DG.Datos.dll": {}
@@ -1857,6 +1858,14 @@
         },
         "compile": {
           "TFI-Agro-intelligent-DG.Negocio.dll": {}
+        }
+      },
+      "TFI-Agro-intelligent-DG.Seguridad/1.0.0": {
+        "runtime": {
+          "TFI-Agro-intelligent-DG.Seguridad.dll": {}
+        },
+        "compile": {
+          "TFI-Agro-intelligent-DG.Seguridad.dll": {}
         }
       },
       "Microsoft.AspNetCore.Antiforgery/5.0.0.0": {
@@ -4616,6 +4625,11 @@
       "sha512": ""
     },
     "TFI-Agro-intelligent-DG.Negocio/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "TFI-Agro-intelligent-DG.Seguridad/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

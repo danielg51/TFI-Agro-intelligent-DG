@@ -134,3 +134,5 @@ D:\Users\502001192\source\repos\TFI-Agro-intelligent-DG\TFI-Agro-Itelligent-DG.R
 D:\Users\502001192\source\repos\TFI-Agro-intelligent-DG\TFI-Agro-Itelligent-DG.RestAPI\obj\Debug\net5.0\ref\TFI-Agro-Itelligent-DG.RestAPI.dll
 D:\Users\502001192\source\repos\TFI-Agro-intelligent-DG\TFI-Agro-Itelligent-DG.RestAPI\obj\Debug\net5.0\TFI-Agro-Itelligent-DG.RestAPI.pdb
 D:\Users\502001192\source\repos\TFI-Agro-intelligent-DG\TFI-Agro-Itelligent-DG.RestAPI\obj\Debug\net5.0\TFI-Agro-Itelligent-DG.RestAPI.genruntimeconfig.cache
+D:\Users\502001192\source\repos\TFI-Agro-intelligent-DG\TFI-Agro-Itelligent-DG.RestAPI\bin\Debug\net5.0\TFI-Agro-intelligent-DG.Seguridad.dll
+D:\Users\502001192\source\repos\TFI-Agro-intelligent-DG\TFI-Agro-Itelligent-DG.RestAPI\bin\Debug\net5.0\TFI-Agro-intelligent-DG.Seguridad.pdb

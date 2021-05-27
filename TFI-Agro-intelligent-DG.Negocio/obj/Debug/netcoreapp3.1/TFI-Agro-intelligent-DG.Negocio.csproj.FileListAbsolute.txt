@@ -15,3 +15,4 @@ D:\Users\502001192\source\repos\TFI-Agro-intelligent-DG\TFI-Agro-intelligent-DG.
 D:\Users\502001192\source\repos\TFI-Agro-intelligent-DG\TFI-Agro-intelligent-DG.Negocio\obj\Debug\netcoreapp3.1\TFI-Agro-intelligent-DG.Negocio.csproj.CoreCompileInputs.cache
 D:\Users\502001192\source\repos\TFI-Agro-intelligent-DG\TFI-Agro-intelligent-DG.Negocio\obj\Debug\netcoreapp3.1\TFI-Agro-intelligent-DG.Negocio.dll
 D:\Users\502001192\source\repos\TFI-Agro-intelligent-DG\TFI-Agro-intelligent-DG.Negocio\obj\Debug\netcoreapp3.1\TFI-Agro-intelligent-DG.Negocio.pdb
+D:\Users\502001192\source\repos\TFI-Agro-intelligent-DG\TFI-Agro-intelligent-DG.Negocio\obj\Debug\netcoreapp3.1\TFI-Agro-intelligent-DG.Negocio.csprojAssemblyReference.cache

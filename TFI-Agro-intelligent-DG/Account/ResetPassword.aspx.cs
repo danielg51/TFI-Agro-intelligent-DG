@@ -27,7 +27,7 @@ namespace TFI_Agro_intelligent_DG.Account
                 var user = manager.FindByName(Email.Text);
                 if (user == null)
                 {
-                    ErrorMessage.Text = "No user found";
+                    ErrorMessage.Text = "Usuario no encontrado";
                     return;
                 }
                 var result = manager.ResetPassword(user.Id, code, Password.Text);
@@ -40,7 +40,7 @@ namespace TFI_Agro_intelligent_DG.Account
                 return;
             }
 
-            ErrorMessage.Text = "An error has occurred";
+            ErrorMessage.Text = "Ah aocurrido un error";
         }
     }
 }

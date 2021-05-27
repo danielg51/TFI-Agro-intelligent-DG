@@ -30,6 +30,9 @@
             "projectReferences": {
               "D:\\Users\\502001192\\source\\repos\\TFI-Agro-intelligent-DG\\TFI-Agro-intelligent-DG.Negocio\\TFI-Agro-intelligent-DG.Negocio.csproj": {
                 "projectPath": "D:\\Users\\502001192\\source\\repos\\TFI-Agro-intelligent-DG\\TFI-Agro-intelligent-DG.Negocio\\TFI-Agro-intelligent-DG.Negocio.csproj"
+              },
+              "D:\\Users\\502001192\\source\\repos\\TFI-Agro-intelligent-DG\\TFI-Agro-intelligent-DG.Seguridad\\TFI-Agro-intelligent-DG.Seguridad.csproj": {
+                "projectPath": "D:\\Users\\502001192\\source\\repos\\TFI-Agro-intelligent-DG\\TFI-Agro-intelligent-DG.Seguridad\\TFI-Agro-intelligent-DG.Seguridad.csproj"
               }
             }
           }
@@ -47,6 +50,12 @@
             "DotNetToolkit": {
               "target": "Package",
               "version": "[1.7.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.2, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
@@ -86,6 +95,60 @@
         "projectPath": "D:\\Users\\502001192\\source\\repos\\TFI-Agro-intelligent-DG\\TFI-Agro-intelligent-DG.Negocio\\TFI-Agro-intelligent-DG.Negocio.csproj",
         "packagesPath": "D:\\Users\\502001192\\.nuget\\packages\\",
         "outputPath": "D:\\Users\\502001192\\source\\repos\\TFI-Agro-intelligent-DG\\TFI-Agro-intelligent-DG.Negocio\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "D:\\Users\\502001192\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Users\\502001192\\source\\repos\\TFI-Agro-intelligent-DG\\TFI-Agro-intelligent-DG.Seguridad\\TFI-Agro-intelligent-DG.Seguridad.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Users\\502001192\\source\\repos\\TFI-Agro-intelligent-DG\\TFI-Agro-intelligent-DG.Seguridad\\TFI-Agro-intelligent-DG.Seguridad.csproj",
+        "projectName": "TFI-Agro-intelligent-DG.Seguridad",
+        "projectPath": "D:\\Users\\502001192\\source\\repos\\TFI-Agro-intelligent-DG\\TFI-Agro-intelligent-DG.Seguridad\\TFI-Agro-intelligent-DG.Seguridad.csproj",
+        "packagesPath": "D:\\Users\\502001192\\.nuget\\packages\\",
+        "outputPath": "D:\\Users\\502001192\\source\\repos\\TFI-Agro-intelligent-DG\\TFI-Agro-intelligent-DG.Seguridad\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "D:\\Users\\502001192\\AppData\\Roaming\\NuGet\\NuGet.Config",

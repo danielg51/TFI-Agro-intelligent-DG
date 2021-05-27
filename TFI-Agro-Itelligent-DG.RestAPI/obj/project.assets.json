@@ -2449,7 +2449,8 @@
         "dependencies": {
           "DotNetToolkit": "1.7.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "5.0.2",
-          "TFI-Agro-intelligent-DG.Negocio": "1.0.0"
+          "TFI-Agro-intelligent-DG.Negocio": "1.0.0",
+          "TFI-Agro-intelligent-DG.Seguridad": "1.0.0"
         },
         "compile": {
           "bin/placeholder/TFI-Agro-intelligent-DG.Datos.dll": {}
@@ -2466,6 +2467,16 @@
         },
         "runtime": {
           "bin/placeholder/TFI-Agro-intelligent-DG.Negocio.dll": {}
+        }
+      },
+      "TFI-Agro-intelligent-DG.Seguridad/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/TFI-Agro-intelligent-DG.Seguridad.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TFI-Agro-intelligent-DG.Seguridad.dll": {}
         }
       }
     }
@@ -8069,6 +8080,11 @@
       "type": "project",
       "path": "../TFI-Agro-intelligent-DG.Negocio/TFI-Agro-intelligent-DG.Negocio.csproj",
       "msbuildProject": "../TFI-Agro-intelligent-DG.Negocio/TFI-Agro-intelligent-DG.Negocio.csproj"
+    },
+    "TFI-Agro-intelligent-DG.Seguridad/1.0.0": {
+      "type": "project",
+      "path": "../TFI-Agro-intelligent-DG.Seguridad/TFI-Agro-intelligent-DG.Seguridad.csproj",
+      "msbuildProject": "../TFI-Agro-intelligent-DG.Seguridad/TFI-Agro-intelligent-DG.Seguridad.csproj"
     }
   },
   "projectFileDependencyGroups": {

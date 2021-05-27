@@ -9,9 +9,11 @@
       "TFI-Agro-intelligent-DG.Datos/1.0.0": {
         "dependencies": {
           "DotNetToolkit": "1.7.0",
+          "Microsoft.EntityFrameworkCore.Design": "5.0.2",
           "Microsoft.EntityFrameworkCore.SqlServer": "5.0.2",
           "Microsoft.EntityFrameworkCore.Tools": "5.0.2",
-          "TFI-Agro-intelligent-DG.Negocio": "1.0.0"
+          "TFI-Agro-intelligent-DG.Negocio": "1.0.0",
+          "TFI-Agro-intelligent-DG.Seguridad": "1.0.0"
         },
         "runtime": {
           "TFI-Agro-intelligent-DG.Datos.dll": {}
@@ -1671,6 +1673,11 @@
         "runtime": {
           "TFI-Agro-intelligent-DG.Negocio.dll": {}
         }
+      },
+      "TFI-Agro-intelligent-DG.Seguridad/1.0.0": {
+        "runtime": {
+          "TFI-Agro-intelligent-DG.Seguridad.dll": {}
+        }
       }
     }
   },
@@ -2696,6 +2703,11 @@
       "hashPath": "system.xml.xmlserializer.4.3.0.nupkg.sha512"
     },
     "TFI-Agro-intelligent-DG.Negocio/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "TFI-Agro-intelligent-DG.Seguridad/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

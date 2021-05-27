@@ -1,0 +1,8 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>TFI_Agro_intelligent_DG.Seguridad</RootNamespace>
+  </PropertyGroup>
+
+</Project>
