@@ -10,6 +10,7 @@ namespace TFI_Agro_intelligent_DG.Contexts
         public DbSet<Patente> Patentes { get; set; }
         public DbSet<Familia> Familias { get; set; }
         public DbSet<FamiliaPatenteUsuario> FamiliaPatentesUsuarios { get; set; }
+        public DbSet<Bitacora> Bitacoras { get; set; }
 
 
 
@@ -60,6 +61,15 @@ namespace TFI_Agro_intelligent_DG.Contexts
 
             modelBuilder.Entity<FamiliaPatenteUsuario>().HasData(accesoBitacoraRolSistemas);
 
+            var eventoAccesoLogin = new Bitacora
+            {
+                BitacoraId = 1,
+                UserId = 1,
+                Detalle = "ACCESO LOGIN",
+                FechaHoraAcceso = DateTime.Now
+            };
+
+            modelBuilder.Entity<Bitacora>().HasData(eventoAccesoLogin);
 
         }
     }

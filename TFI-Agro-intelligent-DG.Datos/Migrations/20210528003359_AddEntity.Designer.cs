@@ -7,11 +7,11 @@ using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using TFI_Agro_intelligent_DG.Contexts;
 
-namespace TFIAgrointelligentDG.Datos.Migrations
+namespace TFIAgrointelligentDG.Datos.Migrations.Seguridad
 {
     [DbContext(typeof(SeguridadContext))]
-    [Migration("20210527015151_SeguridadMigration")]
-    partial class SeguridadMigration
+    [Migration("20210528003359_AddEntity")]
+    partial class AddEntity
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -20,6 +20,36 @@ namespace TFIAgrointelligentDG.Datos.Migrations
                 .UseIdentityColumns()
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("ProductVersion", "5.0.2");
+
+            modelBuilder.Entity("TFI_Agro_intelligent_DG.Seguridad.Modelo.Bitacora", b =>
+                {
+                    b.Property<int>("BitacoraId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .UseIdentityColumn();
+
+                    b.Property<string>("Detalle")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("FechaHoraAcceso")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
+                    b.HasKey("BitacoraId");
+
+                    b.ToTable("Bitacoras");
+
+                    b.HasData(
+                        new
+                        {
+                            BitacoraId = 1,
+                            Detalle = "ACCESO LOGIN",
+                            FechaHoraAcceso = new DateTime(2021, 5, 27, 21, 33, 59, 383, DateTimeKind.Local).AddTicks(7513),
+                            UserId = 1
+                        });
+                });
 
             modelBuilder.Entity("TFI_Agro_intelligent_DG.Seguridad.Modelo.Familia", b =>
                 {

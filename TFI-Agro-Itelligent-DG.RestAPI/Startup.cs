@@ -34,8 +34,11 @@ namespace TFI_Agro_Itelligent_DG.RestAPI
             builder.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader()));
             services.AddControllers();
             services.AddDbContext<ServicioContext>();
+            services.AddDbContext<SeguridadContext>();
             services.AddScoped<IPackManager, PackManager>();
             services.AddScoped(typeof(IPackManager), typeof(PackManager));
+            services.AddScoped<ISeguridadManager, SeguridadManager>();
+            services.AddScoped(typeof(ISeguridadManager), typeof(SeguridadManager));
 
             services.AddSwaggerGen(c =>
             {

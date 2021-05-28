@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using TFI_Agro_intelligent_DG.Contexts;
 
 namespace TFIAgrointelligentDG.Datos.Migrations
 {
     [DbContext(typeof(SeguridadContext))]
-    partial class SeguridadContextModelSnapshot : ModelSnapshot
+    [Migration("20210528002400_SeguridadMigration")]
+    partial class SeguridadMigration
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -44,7 +46,7 @@ namespace TFIAgrointelligentDG.Datos.Migrations
                         {
                             BitacoraId = 1,
                             Detalle = "ACCESO LOGIN",
-                            FechaHoraAcceso = new DateTime(2021, 5, 27, 21, 33, 59, 383, DateTimeKind.Local).AddTicks(7513),
+                            FechaHoraAcceso = new DateTime(2021, 5, 27, 21, 23, 59, 569, DateTimeKind.Local).AddTicks(4180),
                             UserId = 1
                         });
                 });
