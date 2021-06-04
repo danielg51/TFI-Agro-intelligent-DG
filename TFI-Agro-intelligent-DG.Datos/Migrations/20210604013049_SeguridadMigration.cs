@@ -13,7 +13,7 @@ namespace TFIAgrointelligentDG.Datos.Migrations
                 {
                     BitacoraId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    UserId = table.Column<int>(type: "int", nullable: false),
+                    UserId = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     FechaHoraAcceso = table.Column<DateTime>(type: "datetime2", nullable: false),
                     Detalle = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
@@ -63,7 +63,7 @@ namespace TFIAgrointelligentDG.Datos.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     FamiliaId = table.Column<int>(type: "int", nullable: false),
                     PatenteId = table.Column<int>(type: "int", nullable: false),
-                    UserId = table.Column<int>(type: "int", nullable: false)
+                    UserId = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -85,7 +85,7 @@ namespace TFIAgrointelligentDG.Datos.Migrations
             migrationBuilder.InsertData(
                 table: "Bitacoras",
                 columns: new[] { "BitacoraId", "Detalle", "FechaHoraAcceso", "UserId" },
-                values: new object[] { 1, "ACCESO LOGIN", new DateTime(2021, 5, 27, 21, 23, 59, 569, DateTimeKind.Local).AddTicks(4180), 1 });
+                values: new object[] { 1, "ACCESO LOGIN", new DateTime(2021, 6, 3, 22, 30, 49, 305, DateTimeKind.Local).AddTicks(1755), "1" });
 
             migrationBuilder.InsertData(
                 table: "Familias",
@@ -100,7 +100,7 @@ namespace TFIAgrointelligentDG.Datos.Migrations
             migrationBuilder.InsertData(
                 table: "FamiliaPatentesUsuarios",
                 columns: new[] { "FamiliaPatenteUsuarioId", "FamiliaId", "PatenteId", "UserId" },
-                values: new object[] { 1, 1, 1, 1 });
+                values: new object[] { 1, 1, 1, "1" });
 
             migrationBuilder.InsertData(
                 table: "Familias",

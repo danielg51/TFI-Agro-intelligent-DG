@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Users\\502001192\\source\\repos\\TFI-Agro-intelligent-DG\\TFI-Agro-intelligent-DG.Seguridad\\TFI-Agro-intelligent-DG.Seguridad.csproj": {}
+    "C:\\Users\\502001192\\source\\repos\\TFI-Agro-intelligent-DG\\TFI-Agro-intelligent-DG.Seguridad\\TFI-Agro-intelligent-DG.Seguridad.csproj": {}
   },
   "projects": {
-    "D:\\Users\\502001192\\source\\repos\\TFI-Agro-intelligent-DG\\TFI-Agro-intelligent-DG.Seguridad\\TFI-Agro-intelligent-DG.Seguridad.csproj": {
+    "C:\\Users\\502001192\\source\\repos\\TFI-Agro-intelligent-DG\\TFI-Agro-intelligent-DG.Seguridad\\TFI-Agro-intelligent-DG.Seguridad.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Users\\502001192\\source\\repos\\TFI-Agro-intelligent-DG\\TFI-Agro-intelligent-DG.Seguridad\\TFI-Agro-intelligent-DG.Seguridad.csproj",
+        "projectUniqueName": "C:\\Users\\502001192\\source\\repos\\TFI-Agro-intelligent-DG\\TFI-Agro-intelligent-DG.Seguridad\\TFI-Agro-intelligent-DG.Seguridad.csproj",
         "projectName": "TFI-Agro-intelligent-DG.Seguridad",
-        "projectPath": "D:\\Users\\502001192\\source\\repos\\TFI-Agro-intelligent-DG\\TFI-Agro-intelligent-DG.Seguridad\\TFI-Agro-intelligent-DG.Seguridad.csproj",
-        "packagesPath": "D:\\Users\\502001192\\.nuget\\packages\\",
-        "outputPath": "D:\\Users\\502001192\\source\\repos\\TFI-Agro-intelligent-DG\\TFI-Agro-intelligent-DG.Seguridad\\obj\\",
+        "projectPath": "C:\\Users\\502001192\\source\\repos\\TFI-Agro-intelligent-DG\\TFI-Agro-intelligent-DG.Seguridad\\TFI-Agro-intelligent-DG.Seguridad.csproj",
+        "packagesPath": "C:\\Users\\502001192\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\502001192\\source\\repos\\TFI-Agro-intelligent-DG\\TFI-Agro-intelligent-DG.Seguridad\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "D:\\Users\\502001192\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\502001192\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -54,7 +54,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.300\\RuntimeIdentifierGraph.json"
         }
       }
     }

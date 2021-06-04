@@ -8097,19 +8097,19 @@
     ]
   },
   "packageFolders": {
-    "D:\\Users\\502001192\\.nuget\\packages\\": {}
+    "C:\\Users\\502001192\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Users\\502001192\\source\\repos\\TFI-Agro-intelligent-DG\\TFI-Agro-Itelligent-DG.RestAPI\\TFI-Agro-Itelligent-DG.RestAPI.csproj",
+      "projectUniqueName": "C:\\Users\\502001192\\source\\repos\\TFI-Agro-intelligent-DG\\TFI-Agro-Itelligent-DG.RestAPI\\TFI-Agro-Itelligent-DG.RestAPI.csproj",
       "projectName": "TFI-Agro-Itelligent-DG.RestAPI",
-      "projectPath": "D:\\Users\\502001192\\source\\repos\\TFI-Agro-intelligent-DG\\TFI-Agro-Itelligent-DG.RestAPI\\TFI-Agro-Itelligent-DG.RestAPI.csproj",
-      "packagesPath": "D:\\Users\\502001192\\.nuget\\packages\\",
-      "outputPath": "D:\\Users\\502001192\\source\\repos\\TFI-Agro-intelligent-DG\\TFI-Agro-Itelligent-DG.RestAPI\\obj\\",
+      "projectPath": "C:\\Users\\502001192\\source\\repos\\TFI-Agro-intelligent-DG\\TFI-Agro-Itelligent-DG.RestAPI\\TFI-Agro-Itelligent-DG.RestAPI.csproj",
+      "packagesPath": "C:\\Users\\502001192\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\502001192\\source\\repos\\TFI-Agro-intelligent-DG\\TFI-Agro-Itelligent-DG.RestAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "D:\\Users\\502001192\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\502001192\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -8123,11 +8123,11 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "D:\\Users\\502001192\\source\\repos\\TFI-Agro-intelligent-DG\\TFI-Agro-intelligent-DG.Datos\\TFI-Agro-intelligent-DG.Datos.csproj": {
-              "projectPath": "D:\\Users\\502001192\\source\\repos\\TFI-Agro-intelligent-DG\\TFI-Agro-intelligent-DG.Datos\\TFI-Agro-intelligent-DG.Datos.csproj"
+            "C:\\Users\\502001192\\source\\repos\\TFI-Agro-intelligent-DG\\TFI-Agro-intelligent-DG.Datos\\TFI-Agro-intelligent-DG.Datos.csproj": {
+              "projectPath": "C:\\Users\\502001192\\source\\repos\\TFI-Agro-intelligent-DG\\TFI-Agro-intelligent-DG.Datos\\TFI-Agro-intelligent-DG.Datos.csproj"
             },
-            "D:\\Users\\502001192\\source\\repos\\TFI-Agro-intelligent-DG\\TFI-Agro-intelligent-DG.Negocio\\TFI-Agro-intelligent-DG.Negocio.csproj": {
-              "projectPath": "D:\\Users\\502001192\\source\\repos\\TFI-Agro-intelligent-DG\\TFI-Agro-intelligent-DG.Negocio\\TFI-Agro-intelligent-DG.Negocio.csproj"
+            "C:\\Users\\502001192\\source\\repos\\TFI-Agro-intelligent-DG\\TFI-Agro-intelligent-DG.Negocio\\TFI-Agro-intelligent-DG.Negocio.csproj": {
+              "projectPath": "C:\\Users\\502001192\\source\\repos\\TFI-Agro-intelligent-DG\\TFI-Agro-intelligent-DG.Negocio\\TFI-Agro-intelligent-DG.Negocio.csproj"
             }
           }
         }
@@ -8177,7 +8177,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.300\\RuntimeIdentifierGraph.json"
       }
     }
   }

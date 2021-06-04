@@ -56,7 +56,7 @@ namespace TFI_Agro_intelligent_DG.Contexts
                 FamiliaPatenteUsuarioId = 1,
                 PatenteId = 1,
                 FamiliaId = 1,
-                UserId = 1
+                UserId = "1"
             };
 
             modelBuilder.Entity<FamiliaPatenteUsuario>().HasData(accesoBitacoraRolSistemas);
@@ -64,7 +64,7 @@ namespace TFI_Agro_intelligent_DG.Contexts
             var eventoAccesoLogin = new Bitacora
             {
                 BitacoraId = 1,
-                UserId = 1,
+                UserId = "1",
                 Detalle = "ACCESO LOGIN",
                 FechaHoraAcceso = DateTime.Now
             };

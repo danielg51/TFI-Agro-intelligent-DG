@@ -17,7 +17,7 @@ namespace TFI_Agro_intelligent_DG.Datos.Managers
         {
             _context = context;
         }
-        public async Task<Bitacora> GrabarEvento(int usuarioId, string detalle)
+        public async Task<Bitacora> GrabarEvento(string usuarioId, string detalle)
         {
             var bitacora = new Bitacora
             {

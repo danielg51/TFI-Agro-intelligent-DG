@@ -1,9 +1,11 @@
 ﻿using System;
+using System.Security.Claims;
 using System.Web;
 using System.Web.UI;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Owin;
+using TFI_Agro_intelligent_DG.Helpers;
 using TFI_Agro_intelligent_DG.Models;
 
 namespace TFI_Agro_intelligent_DG.Account
@@ -39,6 +41,7 @@ namespace TFI_Agro_intelligent_DG.Account
                 switch (result)
                 {
                     case SignInStatus.Success:
+                         BitacoraHelper.GrabarEvento("LOGIN USUARIO", Email.Text);
                         IdentityHelper.RedirectToReturnUrl(Request.QueryString["ReturnUrl"], Response);
                         break;
                     case SignInStatus.LockedOut:

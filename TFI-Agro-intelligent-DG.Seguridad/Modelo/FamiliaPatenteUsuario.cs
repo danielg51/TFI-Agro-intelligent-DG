@@ -11,6 +11,6 @@ namespace TFI_Agro_intelligent_DG.Seguridad.Modelo
         public Familia Familia { get; set; }
         public int PatenteId { get; set; }
         public Patente Patente { get; set; }
-        public int UserId { get; set; }
+        public string UserId { get; set; }
     }
 }

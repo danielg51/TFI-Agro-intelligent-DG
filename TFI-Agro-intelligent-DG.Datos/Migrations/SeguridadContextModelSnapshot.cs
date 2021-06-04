@@ -32,8 +32,8 @@ namespace TFIAgrointelligentDG.Datos.Migrations
                     b.Property<DateTime>("FechaHoraAcceso")
                         .HasColumnType("datetime2");
 
-                    b.Property<int>("UserId")
-                        .HasColumnType("int");
+                    b.Property<string>("UserId")
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("BitacoraId");
 
@@ -44,8 +44,8 @@ namespace TFIAgrointelligentDG.Datos.Migrations
                         {
                             BitacoraId = 1,
                             Detalle = "ACCESO LOGIN",
-                            FechaHoraAcceso = new DateTime(2021, 5, 27, 21, 33, 59, 383, DateTimeKind.Local).AddTicks(7513),
-                            UserId = 1
+                            FechaHoraAcceso = new DateTime(2021, 6, 3, 22, 30, 49, 305, DateTimeKind.Local).AddTicks(1755),
+                            UserId = "1"
                         });
                 });
 
@@ -95,8 +95,8 @@ namespace TFIAgrointelligentDG.Datos.Migrations
                     b.Property<int>("PatenteId")
                         .HasColumnType("int");
 
-                    b.Property<int>("UserId")
-                        .HasColumnType("int");
+                    b.Property<string>("UserId")
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("FamiliaPatenteUsuarioId");
 
@@ -112,7 +112,7 @@ namespace TFIAgrointelligentDG.Datos.Migrations
                             FamiliaPatenteUsuarioId = 1,
                             FamiliaId = 1,
                             PatenteId = 1,
-                            UserId = 1
+                            UserId = "1"
                         });
                 });
 

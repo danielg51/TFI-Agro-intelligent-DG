@@ -11,7 +11,7 @@ namespace TFI_Agro_intelligent_DG.Seguridad.Modelo
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int BitacoraId { get; set; }
-        public int UserId { get; set; }
+        public string UserId { get; set; }
         public DateTime FechaHoraAcceso { get; set; }
         public string Detalle { get; set; }
     }
