@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Administrar su contraseña" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="ManagePassword.aspx.cs" Inherits="TFI_Agro_intelligent_DG.Account.ManagePassword" %>
+﻿<%@ Page Title="Administrar su contraseña" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="ManagePassword.aspx.cs" Inherits="TFI_Agro_intelligent_DG.Account.ManagePassword" Async="true" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <h2><%: Title %>.</h2>

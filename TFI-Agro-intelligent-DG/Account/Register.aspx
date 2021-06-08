@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Registración" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Register.aspx.cs" Inherits="TFI_Agro_intelligent_DG.Account.Register" %>
+﻿<%@ Page Title="Registración" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Register.aspx.cs" Inherits="TFI_Agro_intelligent_DG.Account.Register" Async="true" %>
 
 <asp:Content runat="server" ID="BodyContent" ContentPlaceHolderID="MainContent">
     <h2><%: Title %>.</h2>

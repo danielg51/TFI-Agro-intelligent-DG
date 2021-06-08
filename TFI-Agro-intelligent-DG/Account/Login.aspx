@@ -16,14 +16,16 @@
                             <asp:Literal runat="server" ID="FailureText" />
                         </p>
                     </asp:PlaceHolder>
-
                     <div class="form-group">
                         <asp:DropDownList ID="ComboLogin" runat="server">
                             <asp:ListItem Text="Intranet" Value="Intranet"></asp:ListItem>
                             <asp:ListItem Text="Cliente" Value="Cliente"></asp:ListItem>
                         </asp:DropDownList>
 
-                       </div>
+                     </div>
+                    <asp:Login ID="ControlLogin" runat="server"  OnAuthenticate="Login_Authenticate" OnLoggingIn="Login_LoggingIn"></asp:Login>
+
+                    <%--
 
                     <div class="form-group">
                                                 <asp:Label runat="server" AssociatedControlID="Email" CssClass="col-md-2 control-label">Email</asp:Label>
@@ -53,7 +55,7 @@
                             <asp:Button runat="server" OnClick="LogIn" Text="Iniciar" CssClass="btn btn-default" />
                         </div>
                     </div>
-                </div>
+                </div>--%>
                 <p>
                     <asp:HyperLink runat="server" ID="RegisterHyperLink" ViewStateMode="Disabled">Registrar como nuevo usuario.</asp:HyperLink>
                 </p>

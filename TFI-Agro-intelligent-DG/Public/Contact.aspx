@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Contáctenos" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Contact.aspx.cs" Inherits="TFI_Agro_intelligent_DG.Contact" %>
+﻿<%@ Page Title="Contáctenos" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Contact.aspx.cs" Inherits="TFI_Agro_intelligent_DG.Contact" Async="true" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <h2><%: Title %>.</h2>

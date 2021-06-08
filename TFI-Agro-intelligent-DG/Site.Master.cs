@@ -7,6 +7,7 @@ using System.Web.Security;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using Microsoft.AspNet.Identity;
+using TFI_Agro_intelligent_DG.Helpers;
 
 namespace TFI_Agro_intelligent_DG
 {
@@ -72,9 +73,10 @@ namespace TFI_Agro_intelligent_DG
 
         }
 
-        protected void Unnamed_LoggingOut(object sender, LoginCancelEventArgs e)
+        protected async void Unnamed_LoggingOut(object sender, LoginCancelEventArgs e)
         {
             Session["Modo"] = null;
+            BitacoraHelper.GrabarEvento("LOGOUT USUARIO", HttpContext.Current.User.Identity.Name);
             Context.GetOwinContext().Authentication.SignOut(DefaultAuthenticationTypes.ApplicationCookie);
         }
     }

@@ -32,8 +32,8 @@ namespace TFI_Agro_Itelligent_DG.RestAPI.Controllers
         }
 
         [HttpPost]
-        public async Task<Bitacora> GrabarEvento([FromBody]string detalle, string userId) {
-            var bitacora = await _manager.GrabarEvento(userId, detalle);
+        public async Task<Bitacora> GrabarEvento(Bitacora bitacoraParam) {
+            var bitacora = await _manager.GrabarEvento(bitacoraParam.UserId, bitacoraParam.Detalle);
             return bitacora;
         }
 

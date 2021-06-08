@@ -7,6 +7,7 @@ using System.Web.Optimization;
 using System.Web.Routing;
 using System.Web.Security;
 using System.Web.SessionState;
+using TFI_Agro_intelligent_DG.Helpers;
 
 namespace TFI_Agro_intelligent_DG
 {
@@ -19,5 +20,6 @@ namespace TFI_Agro_intelligent_DG
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
         }
+      
     }
 }

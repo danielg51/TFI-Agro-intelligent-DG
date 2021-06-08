@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Administrar su cuenta" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Manage.aspx.cs" Inherits="TFI_Agro_intelligent_DG.Account.Manage" %>
+﻿<%@ Page Title="Administrar su cuenta" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Manage.aspx.cs" Inherits="TFI_Agro_intelligent_DG.Account.Manage" Async="true" %>
 
 <%@ Register Src="~/Account/OpenAuthProviders.ascx" TagPrefix="uc" TagName="OpenAuthProviders" %>
 

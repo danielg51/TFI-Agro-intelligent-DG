@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Security.Claims;
 using System.Web;
+using System.Web.Security;
 using System.Web.UI;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
@@ -25,7 +26,9 @@ namespace TFI_Agro_intelligent_DG.Account
             }
         }
 
-        protected void LogIn(object sender, EventArgs e)
+        
+
+        protected void Login_Authenticate(object sender, System.Web.UI.WebControls.AuthenticateEventArgs e)
         {
             if (IsValid)
             {
@@ -36,21 +39,20 @@ namespace TFI_Agro_intelligent_DG.Account
 
                 // This doen't count login failures towards account lockout
                 // To enable password failures to trigger lockout, change to shouldLockout: true
-                var result = signinManager.PasswordSignIn(Email.Text, Password.Text, RememberMe.Checked, shouldLockout: false);
+                var result = signinManager.PasswordSignIn(ControlLogin.UserName, ControlLogin.Password, ControlLogin.RememberMeSet, shouldLockout: false);
 
                 switch (result)
                 {
                     case SignInStatus.Success:
-                         BitacoraHelper.GrabarEvento("LOGIN USUARIO", Email.Text);
                         IdentityHelper.RedirectToReturnUrl(Request.QueryString["ReturnUrl"], Response);
                         break;
                     case SignInStatus.LockedOut:
                         Response.Redirect("/Account/Lockout");
                         break;
                     case SignInStatus.RequiresVerification:
-                        Response.Redirect(String.Format("/Account/TwoFactorAuthenticationSignIn?ReturnUrl={0}&RememberMe={1}", 
+                        Response.Redirect(String.Format("/Account/TwoFactorAuthenticationSignIn?ReturnUrl={0}&RememberMe={1}",
                                                         Request.QueryString["ReturnUrl"],
-                                                        RememberMe.Checked),
+                                                        ControlLogin.RememberMeSet),
                                           true);
                         break;
                     case SignInStatus.Failure:
@@ -60,6 +62,12 @@ namespace TFI_Agro_intelligent_DG.Account
                         break;
                 }
             }
+        }
+
+        protected void Login_LoggingIn(object sender, System.Web.UI.WebControls.LoginCancelEventArgs e)
+        {
+            BitacoraHelper.GrabarEvento("LOGIN USUARIO", ControlLogin.UserName);
+
         }
     }
 }

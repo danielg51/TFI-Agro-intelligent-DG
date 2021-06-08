@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Administrar su cuenta" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="ManageLogins.aspx.cs" Inherits="TFI_Agro_intelligent_DG.Account.ManageLogins" %>
+﻿<%@ Page Title="Administrar su cuenta" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="ManageLogins.aspx.cs" Inherits="TFI_Agro_intelligent_DG.Account.ManageLogins" Async="true"%>
 <%@ Register Src="~/Account/OpenAuthProviders.ascx" TagPrefix="uc" TagName="OpenAuthProviders" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
