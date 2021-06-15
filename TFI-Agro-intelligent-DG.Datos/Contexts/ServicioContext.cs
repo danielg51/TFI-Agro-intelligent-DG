@@ -11,8 +11,8 @@ namespace TFI_Agro_intelligent_DG.Contexts
         public DbSet<PackServicio> PackServicios { get; set; }
         public DbSet<Sensor> Sensores { get; set; }
         public DbSet<Pack> Packs { get; set; }
-
-
+        public DbSet<Carrito> Carritos { get; set; }
+        public DbSet<CarritoDetalle> CarritoDetalles { get; set; }
 
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)

@@ -7,21 +7,35 @@
         <thead>
             <tr>
                 <th>Id</th>
-                <th>Nombre</th>
                 <th>Descripción</th>
+                <th>Acciones</th>
             </tr>
         </thead>
+        <tbody></tbody>
     </table>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainScriptsContent" runat="server">
-    <script src="//cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js"></script>
     <script>
       
         $(document).ready(function () {
-            $('#serviciosTable').DataTable({
-                "ajax": 'https://localhost:44367/Packs'
-            });
+            fetch('https://localhost:44325/Pack')
+                .then(response => response.json())
+                .then(data => {
+                    console.log(data.data);
+                    $.each(data.data, (index, value) => {
+                        $('#serviciosTable >tbody').append(`<tr><td>${value[0]}</td><td>${value[2]}</td><td><button type="button" onclick="agregarAlCarrito('${value[2]}')">Agregar al Carrito</button></td></tr>`);
+                    });
+                });
         });
+        const productos = [];
+        let cantidadProductos = 0;
+        const agregarAlCarrito = (producto) => {
+            cantidadProductos++;
+            productos.push({ producto: producto, cantidad: 1 });
+            window.localStorage.setItem('productos', JSON.stringify(productos));
+            $(".bubble-cart").html(productos.length);
+            console.log(producto);
+        };
     </script>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="MainCssContent" runat="server">

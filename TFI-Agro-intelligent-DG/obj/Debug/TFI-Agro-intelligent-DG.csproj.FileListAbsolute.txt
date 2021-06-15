@@ -461,7 +461,6 @@ C:\Users\502001192\source\repos\TFI-Agro-intelligent-DG\TFI-Agro-intelligent-DG\
 C:\Users\502001192\source\repos\TFI-Agro-intelligent-DG\TFI-Agro-intelligent-DG\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 C:\Users\502001192\source\repos\TFI-Agro-intelligent-DG\TFI-Agro-intelligent-DG\bin\Microsoft.Owin.Security.OAuth.xml
 C:\Users\502001192\source\repos\TFI-Agro-intelligent-DG\TFI-Agro-intelligent-DG\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\502001192\source\repos\TFI-Agro-intelligent-DG\TFI-Agro-intelligent-DG\obj\Debug\TFI-Agro-intelligent-DG.csproj.AssemblyReference.cache
 C:\Users\502001192\source\repos\TFI-Agro-intelligent-DG\TFI-Agro-intelligent-DG\obj\Debug\Interop.mscoree.dll
 C:\Users\502001192\source\repos\TFI-Agro-intelligent-DG\TFI-Agro-intelligent-DG\obj\Debug\TFI-Agro-intelligent-DG.csproj.ResolveComReference.cache
 C:\Users\502001192\source\repos\TFI-Agro-intelligent-DG\TFI-Agro-intelligent-DG\obj\Debug\TFI-Agro-intelligent-DG.csproj.CoreCompileInputs.cache
@@ -586,3 +585,4 @@ C:\Users\Daniel\source\repos\TFI-Agro-intelligent-DG\TFI-Agro-intelligent-DG\bin
 C:\Users\Daniel\source\repos\TFI-Agro-intelligent-DG\TFI-Agro-intelligent-DG\bin\Microsoft.Owin.Security.OAuth.xml
 C:\Users\Daniel\source\repos\TFI-Agro-intelligent-DG\TFI-Agro-intelligent-DG\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 C:\Users\Daniel\source\repos\TFI-Agro-intelligent-DG\TFI-Agro-intelligent-DG\obj\Debug\TFI-Agro-intelligent-DG.csproj.CopyComplete
+C:\Users\502001192\source\repos\TFI-Agro-intelligent-DG\TFI-Agro-intelligent-DG\obj\Debug\TFI-Agro-intelligent-DG.csproj.AssemblyReference.cache

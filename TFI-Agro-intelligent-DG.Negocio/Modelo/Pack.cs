@@ -16,6 +16,7 @@ namespace TFI_Agro_intelligent_DG.Negocio.Modelo
 
         public ICollection<PackServicio> PackServicios { get; set; }
 
+        public double Precio { get; set; }
 
     }
 }

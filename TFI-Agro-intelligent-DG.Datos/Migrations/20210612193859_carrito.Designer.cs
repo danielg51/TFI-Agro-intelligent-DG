@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using TFI_Agro_intelligent_DG.Contexts;
 
-namespace TFIAgrointelligentDG.Datos.Migrations
+namespace TFIAgrointelligentDG.Datos.Migrations.Servicio
 {
     [DbContext(typeof(ServicioContext))]
-    partial class ServicioContextModelSnapshot : ModelSnapshot
+    [Migration("20210612193859_carrito")]
+    partial class carrito
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -37,31 +39,6 @@ namespace TFIAgrointelligentDG.Datos.Migrations
                     b.ToTable("Carritos");
                 });
 
-            modelBuilder.Entity("TFI_Agro_intelligent_DG.Negocio.Modelo.CarritoDetalle", b =>
-                {
-                    b.Property<int>("CarritoDetalleId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .UseIdentityColumn();
-
-                    b.Property<int>("Cantidad")
-                        .HasColumnType("int");
-
-                    b.Property<int?>("CarritoId")
-                        .HasColumnType("int");
-
-                    b.Property<int?>("PackId")
-                        .HasColumnType("int");
-
-                    b.HasKey("CarritoDetalleId");
-
-                    b.HasIndex("CarritoId");
-
-                    b.HasIndex("PackId");
-
-                    b.ToTable("CarritoDetalles");
-                });
-
             modelBuilder.Entity("TFI_Agro_intelligent_DG.Negocio.Modelo.Pack", b =>
                 {
                     b.Property<int>("PackId")
@@ -72,9 +49,6 @@ namespace TFIAgrointelligentDG.Datos.Migrations
                     b.Property<string>("Descripcion")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<double>("Precio")
-                        .HasColumnType("float");
-
                     b.HasKey("PackId");
 
                     b.ToTable("Pack");
@@ -83,8 +57,7 @@ namespace TFIAgrointelligentDG.Datos.Migrations
                         new
                         {
                             PackId = 1,
-                            Descripcion = "Pack Little",
-                            Precio = 0.0
+                            Descripcion = "Pack Little"
                         });
                 });
 
@@ -98,6 +71,9 @@ namespace TFIAgrointelligentDG.Datos.Migrations
                     b.Property<int>("Cantidad")
                         .HasColumnType("int");
 
+                    b.Property<int?>("CarritoId")
+                        .HasColumnType("int");
+
                     b.Property<int>("PackId")
                         .HasColumnType("int");
 
@@ -105,6 +81,8 @@ namespace TFIAgrointelligentDG.Datos.Migrations
                         .HasColumnType("int");
 
                     b.HasKey("PackServicioId");
+
+                    b.HasIndex("CarritoId");
 
                     b.HasIndex("PackId");
 
@@ -201,21 +179,12 @@ namespace TFIAgrointelligentDG.Datos.Migrations
                         });
                 });
 
-            modelBuilder.Entity("TFI_Agro_intelligent_DG.Negocio.Modelo.CarritoDetalle", b =>
-                {
-                    b.HasOne("TFI_Agro_intelligent_DG.Negocio.Modelo.Carrito", null)
-                        .WithMany("DetalleCompra")
-                        .HasForeignKey("CarritoId");
-
-                    b.HasOne("TFI_Agro_intelligent_DG.Negocio.Modelo.Pack", "Pack")
-                        .WithMany()
-                        .HasForeignKey("PackId");
-
-                    b.Navigation("Pack");
-                });
-
             modelBuilder.Entity("TFI_Agro_intelligent_DG.Negocio.Modelo.PackServicio", b =>
                 {
+                    b.HasOne("TFI_Agro_intelligent_DG.Negocio.Modelo.Carrito", null)
+                        .WithMany("PackServicios")
+                        .HasForeignKey("CarritoId");
+
                     b.HasOne("TFI_Agro_intelligent_DG.Negocio.Modelo.Pack", "Pack")
                         .WithMany("PackServicios")
                         .HasForeignKey("PackId")
@@ -246,7 +215,7 @@ namespace TFIAgrointelligentDG.Datos.Migrations
 
             modelBuilder.Entity("TFI_Agro_intelligent_DG.Negocio.Modelo.Carrito", b =>
                 {
-                    b.Navigation("DetalleCompra");
+                    b.Navigation("PackServicios");
                 });
 
             modelBuilder.Entity("TFI_Agro_intelligent_DG.Negocio.Modelo.Pack", b =>

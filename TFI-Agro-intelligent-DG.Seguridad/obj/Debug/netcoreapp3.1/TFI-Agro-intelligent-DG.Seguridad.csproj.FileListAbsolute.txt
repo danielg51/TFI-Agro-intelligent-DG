@@ -10,7 +10,6 @@ D:\Users\502001192\source\repos\TFI-Agro-intelligent-DG\TFI-Agro-intelligent-DG.
 C:\Users\502001192\source\repos\TFI-Agro-intelligent-DG\TFI-Agro-intelligent-DG.Seguridad\bin\Debug\netcoreapp3.1\TFI-Agro-intelligent-DG.Seguridad.deps.json
 C:\Users\502001192\source\repos\TFI-Agro-intelligent-DG\TFI-Agro-intelligent-DG.Seguridad\bin\Debug\netcoreapp3.1\TFI-Agro-intelligent-DG.Seguridad.dll
 C:\Users\502001192\source\repos\TFI-Agro-intelligent-DG\TFI-Agro-intelligent-DG.Seguridad\bin\Debug\netcoreapp3.1\TFI-Agro-intelligent-DG.Seguridad.pdb
-C:\Users\502001192\source\repos\TFI-Agro-intelligent-DG\TFI-Agro-intelligent-DG.Seguridad\obj\Debug\netcoreapp3.1\TFI-Agro-intelligent-DG.Seguridad.csproj.AssemblyReference.cache
 C:\Users\502001192\source\repos\TFI-Agro-intelligent-DG\TFI-Agro-intelligent-DG.Seguridad\obj\Debug\netcoreapp3.1\TFI-Agro-intelligent-DG.Seguridad.AssemblyInfoInputs.cache
 C:\Users\502001192\source\repos\TFI-Agro-intelligent-DG\TFI-Agro-intelligent-DG.Seguridad\obj\Debug\netcoreapp3.1\TFI-Agro-intelligent-DG.Seguridad.AssemblyInfo.cs
 C:\Users\502001192\source\repos\TFI-Agro-intelligent-DG\TFI-Agro-intelligent-DG.Seguridad\obj\Debug\netcoreapp3.1\TFI-Agro-intelligent-DG.Seguridad.csproj.CoreCompileInputs.cache
@@ -25,3 +24,4 @@ C:\Users\Daniel\source\repos\TFI-Agro-intelligent-DG\TFI-Agro-intelligent-DG.Seg
 C:\Users\Daniel\source\repos\TFI-Agro-intelligent-DG\TFI-Agro-intelligent-DG.Seguridad\obj\Debug\netcoreapp3.1\TFI-Agro-intelligent-DG.Seguridad.csproj.CoreCompileInputs.cache
 C:\Users\Daniel\source\repos\TFI-Agro-intelligent-DG\TFI-Agro-intelligent-DG.Seguridad\obj\Debug\netcoreapp3.1\TFI-Agro-intelligent-DG.Seguridad.dll
 C:\Users\Daniel\source\repos\TFI-Agro-intelligent-DG\TFI-Agro-intelligent-DG.Seguridad\obj\Debug\netcoreapp3.1\TFI-Agro-intelligent-DG.Seguridad.pdb
+C:\Users\502001192\source\repos\TFI-Agro-intelligent-DG\TFI-Agro-intelligent-DG.Seguridad\obj\Debug\netcoreapp3.1\TFI-Agro-intelligent-DG.Seguridad.csproj.AssemblyReference.cache

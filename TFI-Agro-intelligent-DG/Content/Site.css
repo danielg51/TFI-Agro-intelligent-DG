@@ -36,3 +36,28 @@ input[type="select"] {
         padding: 0;
     }
 }
+.bubble-cart {
+    min-width: 10px;
+    max-width: 10px;
+    min-height: 10px;
+    background-color: red ;
+    border-radius: 5px;
+    position:absolute;
+    left:26px;
+    top:8px;
+    font-size:5pt;
+    color:white;
+    text-align:center;
+    line-height:8px;
+}
+
+.cart-table {
+    position:absolute;
+    min-width:300px;
+    max-width: 300px;
+    top:40px;
+    left:0px;
+    display:none;
+    background-color:whitesmoke;
+    color:grey;
+}

@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using TFI_Agro_intelligent_DG.Contexts;
 
-namespace TFIAgrointelligentDG.Datos.Migrations
+namespace TFIAgrointelligentDG.Datos.Migrations.Servicio
 {
     [DbContext(typeof(ServicioContext))]
-    partial class ServicioContextModelSnapshot : ModelSnapshot
+    [Migration("20210612203557_carrito2")]
+    partial class carrito2
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

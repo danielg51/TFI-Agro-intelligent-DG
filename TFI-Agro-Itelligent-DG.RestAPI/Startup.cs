@@ -37,6 +37,8 @@ namespace TFI_Agro_Itelligent_DG.RestAPI
             services.AddDbContext<SeguridadContext>();
             services.AddScoped<IPackManager, PackManager>();
             services.AddScoped(typeof(IPackManager), typeof(PackManager));
+            services.AddScoped<ICarritoManager, CarritoManager>();
+            services.AddScoped(typeof(ICarritoManager), typeof(CarritoManager));
             services.AddScoped<ISeguridadManager, SeguridadManager>();
             services.AddScoped(typeof(ISeguridadManager), typeof(SeguridadManager));
 

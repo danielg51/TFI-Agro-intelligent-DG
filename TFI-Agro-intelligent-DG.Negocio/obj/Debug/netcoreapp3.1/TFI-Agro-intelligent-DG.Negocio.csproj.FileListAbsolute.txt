@@ -19,7 +19,6 @@ D:\Users\502001192\source\repos\TFI-Agro-intelligent-DG\TFI-Agro-intelligent-DG.
 C:\Users\502001192\source\repos\TFI-Agro-intelligent-DG\TFI-Agro-intelligent-DG.Negocio\bin\Debug\netcoreapp3.1\TFI-Agro-intelligent-DG.Negocio.deps.json
 C:\Users\502001192\source\repos\TFI-Agro-intelligent-DG\TFI-Agro-intelligent-DG.Negocio\bin\Debug\netcoreapp3.1\TFI-Agro-intelligent-DG.Negocio.dll
 C:\Users\502001192\source\repos\TFI-Agro-intelligent-DG\TFI-Agro-intelligent-DG.Negocio\bin\Debug\netcoreapp3.1\TFI-Agro-intelligent-DG.Negocio.pdb
-C:\Users\502001192\source\repos\TFI-Agro-intelligent-DG\TFI-Agro-intelligent-DG.Negocio\obj\Debug\netcoreapp3.1\TFI-Agro-intelligent-DG.Negocio.csproj.AssemblyReference.cache
 C:\Users\502001192\source\repos\TFI-Agro-intelligent-DG\TFI-Agro-intelligent-DG.Negocio\obj\Debug\netcoreapp3.1\TFI-Agro-intelligent-DG.Negocio.AssemblyInfoInputs.cache
 C:\Users\502001192\source\repos\TFI-Agro-intelligent-DG\TFI-Agro-intelligent-DG.Negocio\obj\Debug\netcoreapp3.1\TFI-Agro-intelligent-DG.Negocio.AssemblyInfo.cs
 C:\Users\502001192\source\repos\TFI-Agro-intelligent-DG\TFI-Agro-intelligent-DG.Negocio\obj\Debug\netcoreapp3.1\TFI-Agro-intelligent-DG.Negocio.csproj.CoreCompileInputs.cache
@@ -34,3 +33,4 @@ C:\Users\Daniel\source\repos\TFI-Agro-intelligent-DG\TFI-Agro-intelligent-DG.Neg
 C:\Users\Daniel\source\repos\TFI-Agro-intelligent-DG\TFI-Agro-intelligent-DG.Negocio\obj\Debug\netcoreapp3.1\TFI-Agro-intelligent-DG.Negocio.csproj.CoreCompileInputs.cache
 C:\Users\Daniel\source\repos\TFI-Agro-intelligent-DG\TFI-Agro-intelligent-DG.Negocio\obj\Debug\netcoreapp3.1\TFI-Agro-intelligent-DG.Negocio.dll
 C:\Users\Daniel\source\repos\TFI-Agro-intelligent-DG\TFI-Agro-intelligent-DG.Negocio\obj\Debug\netcoreapp3.1\TFI-Agro-intelligent-DG.Negocio.pdb
+C:\Users\502001192\source\repos\TFI-Agro-intelligent-DG\TFI-Agro-intelligent-DG.Negocio\obj\Debug\netcoreapp3.1\TFI-Agro-intelligent-DG.Negocio.csproj.AssemblyReference.cache

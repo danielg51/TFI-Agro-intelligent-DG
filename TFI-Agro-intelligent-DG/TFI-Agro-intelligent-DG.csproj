@@ -176,6 +176,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="DB\Roles.sql" />
     <Content Include="Public\About.aspx" />
     <Content Include="Account\AddPhoneNumber.aspx" />
     <Content Include="Account\Confirm.aspx" />
@@ -194,6 +195,7 @@
     <Content Include="Account\VerifyPhoneNumber.aspx" />
     <Content Include="Monitoreo\AgregarDispositivo.aspx" />
     <Content Include="Monitoreo\Alarmas.aspx" />
+    <Content Include="Public\Carrito.aspx" />
     <Content Include="Public\Catalogo.aspx" />
     <Content Include="Public\Contact.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
@@ -392,6 +394,13 @@
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="Public\Carrito.aspx.cs">
+      <DependentUpon>Carrito.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Public\Carrito.aspx.designer.cs">
+      <DependentUpon>Carrito.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Public\Catalogo.aspx.cs">
       <DependentUpon>Catalogo.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
