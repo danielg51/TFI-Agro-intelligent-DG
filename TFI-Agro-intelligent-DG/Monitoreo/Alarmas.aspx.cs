@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace TFI_Agro_intelligent_DG
 {
-    public partial class Alarmas : System.Web.UI.Page
+    public partial class Alarmas : BasePage
     {
         protected void Page_Load(object sender, EventArgs e)
         {

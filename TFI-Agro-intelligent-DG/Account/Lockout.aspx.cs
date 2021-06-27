@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace TFI_Agro_intelligent_DG.Account
 {
-    public partial class Lockout : System.Web.UI.Page
+    public partial class Lockout : BasePage
     {
         protected void Page_Load(object sender, EventArgs e)
         {

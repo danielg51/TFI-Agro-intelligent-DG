@@ -9,7 +9,7 @@ using TFI_Agro_intelligent_DG.Models;
 
 namespace TFI_Agro_intelligent_DG.Account
 {
-    public partial class ResetPassword : Page
+    public partial class ResetPassword : BasePage
     {
         protected string StatusMessage
         {

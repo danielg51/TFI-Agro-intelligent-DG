@@ -1,4 +1,4 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="TFI_Agro_intelligent_DG.SiteMaster" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="TFI_Agro_intelligent_DG.SiteMaster"  %>
 
 <!DOCTYPE html>
 
@@ -51,10 +51,10 @@
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
                         <li><a runat="server" href="~/Public/Default">
-                            <asp:Label ID="Label1" runat="server" Text="Inicio" meta:resoursekey="Inicio"></asp:Label></a></li>
-                        <li><a runat="server" href="~/Public/Catalogo">Catálogo</a></li>
+                            <asp:Label ID="Label1" runat="server" Text="<%$ Resources:Resource.language, Home %>"></asp:Label></a></li>
+                        <li><a runat="server" href="~/Public/Catalogo"><asp:Label ID="Label2" runat="server" Text="<%$ Resources:Resource.language, Catalog %>"></asp:Label></a></li>
                         <li><a runat="server" href="~/Public/Promociones">Promociones</a></li>
-                        <%if (Session["Modo"] != null)
+                        <%if (Session["Modo"] != null && Context.User.Identity.GetUserId() != null)
                             {%>
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Monitoreo<span class="caret"></span></a>
@@ -67,7 +67,7 @@
                             </ul>
                         </li>
                         <%} %>
-                        <%if (Session["Modo"] != null)
+                        <%if (Session["Modo"] != null && Context.User.Identity.GetUserId() != null)
                             {%>
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Reportes<span class="caret"></span></a>
@@ -75,6 +75,17 @@
                                 <li><a href="/Reportes/ReportesStock">Reportes Stock</a></li>
                                 <li><a href="/Reportes/ReportesPersonalizados">Reportes Personalizados</a></li>
                                 <li><a href="/Reportes/ReportesSobreDispositivos">Reportes sobre Dispositivos</a></li>
+                            </ul>
+                        </li>
+                        <%} %>
+                          <%if (Session["Modo"] != null && Context.User.IsInRole("Administrador"))
+                            {%>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Sistemas<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="/Sistemas/Bitacora">Bitacora</a></li>
+                                <li><a href="/Sistemas/ABMCatalogo">ABM Catalogo</a></li>
+                                <li><a href="/Sistemas/AsignarRoles">Asignar Roles</a></li>
                             </ul>
                         </li>
                         <%} %>
@@ -94,7 +105,7 @@
                                 <li><a runat="server" href="~/Account/Login">Iniciar Sesión</a></li>
                             </AnonymousTemplate>
                         </asp:LoginView>
-                        <li class="" ><a runat="server" href="#" onclick="showTableCart();return false;">
+                        <li class="" ><a runat="server" href="#" onclick="clickCarrito();return false;">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
                                 <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
                             </svg>
@@ -108,11 +119,18 @@
                                             <th>Producto</th>
                                             <th>Cantidad</th>
                                             <th>#</th>
+                                            <th>Precio</th>
                                         </tr>
                                     </thead>
                                     <tbody></tbody>
                                 </table>
                             </div>
+                        </li>
+                        <li>
+                            <label style="margin-top:13px;">
+                            <a href="?lang=es"><img style="display:inline;width:30px;height:20px;border-radius:8px;" src="/Content/es.jpg" alt="Spain Flag"></a><span style="display:inline;">&nbsp;|&nbsp;</span>
+                            <a href="?lang=en"><img style="display:inline;width:30px;height:20px;border-radius:8px;" src="/Content/en.jpg" alt="Spain Flag"></a>
+                            </label>
                         </li>
                     </ul>
                 </div>
@@ -135,17 +153,25 @@
             </footer>
         </div>
         <script>
+
+            const clickCarrito = () => {
+                if ($(".cart-table").is(":visible")) {
+                    $(".cart-table").hide();
+                    return;
+                } else {
+                    showTableCart();
+                }
+            }
+
             const showTableCart = () => {
                 $(".cart-table").show();
                 const productos = JSON.parse(window.localStorage.getItem('productos'));
                 console.log("productos:", productos);
                 $('#carritoTable >tbody').html('');
                 $.each(productos, (index, value) => {
-                    $('#carritoTable >tbody').append(`<tr><td>${value.producto}</td><td>${value.cantidad}</td><td><span style="cursor:pointer;" onclick="addProduct('${value.producto}')">+</span> / <span style="cursor:pointer;" onclick="removeProduct('${value.producto}')">-</span></td></tr><tr><td colspan=3 align=center><a runat="server" href="~/Public/Carrito">Generar pedido</a></td></tr>`);
+                    $('#carritoTable >tbody').append(`<tr><td>${value.producto}</td><td>${value.cantidad}</td><td><span style="cursor:pointer;" onclick="addProduct('${value.producto}')">+</span> / <span style="cursor:pointer;" onclick="removeProduct('${value.producto}')">-</span></td><td>${value.cantidad * value.precio}</td></tr><tr><td colspan=3 align=center><a runat="server" href="~/Carrito/Carrito">Generar pedido</a></td></tr>`);
                 });
                 $(".bubble-cart").html(productos.length);
-
-
             };
             const addProduct = (producto) => {
                 let productos = JSON.parse(window.localStorage.getItem('productos'));
@@ -154,6 +180,7 @@
                 productos.push(producto);
                 window.localStorage.setItem('productos', JSON.stringify(productos));
                 showTableCart();
+                $(".cart-table").show();
             }
             const removeProduct = (producto) => {
                 let productos = JSON.parse(window.localStorage.getItem('productos'));
@@ -162,10 +189,11 @@
                 productos.push(producto);
                 if (producto.cantidad == 0) {
                     productos.pop(producto);
-                    cantidadProductos--;
+                    //cantidadProductos--;
                 }
                 window.localStorage.setItem('productos', JSON.stringify(productos));
                 showTableCart();
+                $(".cart-table").show();
             }
         </script>
     </form>

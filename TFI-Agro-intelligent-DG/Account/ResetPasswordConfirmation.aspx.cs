@@ -2,7 +2,7 @@
 
 namespace TFI_Agro_intelligent_DG.Account
 {
-    public partial class ResetPasswordConfirmation : Page
+    public partial class ResetPasswordConfirmation : BasePage
     {
     }
 }

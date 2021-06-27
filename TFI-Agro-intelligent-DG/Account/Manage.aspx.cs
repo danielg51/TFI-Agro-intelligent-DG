@@ -12,7 +12,7 @@ using TFI_Agro_intelligent_DG.Models;
 
 namespace TFI_Agro_intelligent_DG.Account
 {
-    public partial class Manage : System.Web.UI.Page
+    public partial class Manage : BasePage
     {
         protected string SuccessMessage
         {

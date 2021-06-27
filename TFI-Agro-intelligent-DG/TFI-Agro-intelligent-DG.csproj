@@ -176,6 +176,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\en.jpg" />
+    <Content Include="Content\en.svg" />
+    <Content Include="Content\es.jpg" />
+    <Content Include="Content\es.svg" />
     <Content Include="DB\Roles.sql" />
     <Content Include="Public\About.aspx" />
     <Content Include="Account\AddPhoneNumber.aspx" />
@@ -195,7 +199,7 @@
     <Content Include="Account\VerifyPhoneNumber.aspx" />
     <Content Include="Monitoreo\AgregarDispositivo.aspx" />
     <Content Include="Monitoreo\Alarmas.aspx" />
-    <Content Include="Public\Carrito.aspx" />
+    <Content Include="Carrito\Carrito.aspx" />
     <Content Include="Public\Catalogo.aspx" />
     <Content Include="Public\Contact.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
@@ -253,6 +257,9 @@
     <Content Include="Scripts\WebForms\WebForms.js" />
     <Content Include="Scripts\WebForms\WebParts.js" />
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
+    <Content Include="Sistemas\ABMCatalogo.aspx" />
+    <Content Include="Sistemas\AsignarRoles.aspx" />
+    <Content Include="Sistemas\Bitacora.aspx" />
     <Content Include="Site.Master" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
@@ -366,6 +373,24 @@
     <Compile Include="Account\VerifyPhoneNumber.aspx.designer.cs">
       <DependentUpon>VerifyPhoneNumber.aspx</DependentUpon>
     </Compile>
+    <Compile Include="App_GlobalResources\Resource.language.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource.language.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Resource.language.en-US.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource.language.en-US.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Resource.language.es-AR.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource.language.es-AR.resx</DependentUpon>
+    </Compile>
+    <Compile Include="BasePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
     <Compile Include="DTO\Bitacora.cs" />
     <Compile Include="Helpers\BitacoraHelper.cs" />
     <Compile Include="Helpers\UserHelper.cs" />
@@ -394,11 +419,11 @@
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
-    <Compile Include="Public\Carrito.aspx.cs">
+    <Compile Include="Carrito\Carrito.aspx.cs">
       <DependentUpon>Carrito.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Public\Carrito.aspx.designer.cs">
+    <Compile Include="Carrito\Carrito.aspx.designer.cs">
       <DependentUpon>Carrito.aspx</DependentUpon>
     </Compile>
     <Compile Include="Public\Catalogo.aspx.cs">
@@ -476,6 +501,27 @@
     <Compile Include="Roles.aspx.designer.cs">
       <DependentUpon>Roles.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Sistemas\ABMCatalogo.aspx.cs">
+      <DependentUpon>ABMCatalogo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sistemas\ABMCatalogo.aspx.designer.cs">
+      <DependentUpon>ABMCatalogo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sistemas\AsignarRoles.aspx.cs">
+      <DependentUpon>AsignarRoles.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sistemas\AsignarRoles.aspx.designer.cs">
+      <DependentUpon>AsignarRoles.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sistemas\Bitacora.aspx.cs">
+      <DependentUpon>Bitacora.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sistemas\Bitacora.aspx.designer.cs">
+      <DependentUpon>Bitacora.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -491,6 +537,11 @@
       <DependentUpon>Site.Mobile.Master</DependentUpon>
     </Compile>
     <Compile Include="Startup.cs" />
+    <Compile Include="strings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>strings.resx</DependentUpon>
+    </Compile>
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -524,6 +575,24 @@
       <Isolated>False</Isolated>
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\Resource.language.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Resource.language.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\Resource.language.en-US.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Resource.language.en-US.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\Resource.language.es-AR.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Resource.language.es-AR.designer.cs</LastGenOutput>
+    </Content>
+    <EmbeddedResource Include="strings.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>strings.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

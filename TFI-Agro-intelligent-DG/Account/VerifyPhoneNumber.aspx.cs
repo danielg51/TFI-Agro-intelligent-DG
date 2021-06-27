@@ -9,7 +9,7 @@ using Microsoft.AspNet.Identity.Owin;
 
 namespace TFI_Agro_intelligent_DG.Account
 {
-    public partial class VerifyPhoneNumber : System.Web.UI.Page
+    public partial class VerifyPhoneNumber : BasePage
     {
         protected void Page_Load(object sender, EventArgs e)
         {

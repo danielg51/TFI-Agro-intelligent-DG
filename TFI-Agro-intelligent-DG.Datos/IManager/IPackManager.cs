@@ -7,17 +7,17 @@ using TFI_Agro_intelligent_DG.Negocio.Modelo;
 namespace TFI_Agro_intelligent_DG.Datos.IManager
 {
     public interface IPackManager
-{
+    {
 
-    Task<IEnumerable<Pack>> GetPacks();
+        Task<IEnumerable<Pack>> GetPacks();
 
-    Task<Pack> GetPackById(int id);
+        Task<Pack> GetPackById(int id);
 
-    Task<Pack> AddPack(Pack pack);
+        Task<Pack> AddPack(Pack pack);
 
-    Task<Pack> UpdatePack(Pack pack);
+        Task<Pack> UpdatePack(Pack pack);
 
-    Task<Pack> DeletePack(int id);
+        Task<Pack> DeletePack(int id);
 
-}
+    }
 }

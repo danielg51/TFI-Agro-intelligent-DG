@@ -9,7 +9,7 @@ using Microsoft.AspNet.Identity.Owin;
 
 namespace TFI_Agro_intelligent_DG.Account
 {
-    public partial class ManageLogins : System.Web.UI.Page
+    public partial class ManageLogins : BasePage
     {
         protected string SuccessMessage
         {

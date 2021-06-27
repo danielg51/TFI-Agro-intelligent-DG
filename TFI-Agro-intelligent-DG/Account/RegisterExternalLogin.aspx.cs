@@ -8,7 +8,7 @@ using TFI_Agro_intelligent_DG.Models;
 
 namespace TFI_Agro_intelligent_DG.Account
 {
-    public partial class RegisterExternalLogin : System.Web.UI.Page
+    public partial class RegisterExternalLogin : BasePage
     {
         protected string ProviderName
         {

@@ -11,7 +11,7 @@ using TFI_Agro_intelligent_DG.Models;
 
 namespace TFI_Agro_intelligent_DG.Account
 {
-    public partial class AddPhoneNumber : System.Web.UI.Page
+    public partial class AddPhoneNumber : BasePage
     {
         protected void PhoneNumber_Click(object sender, EventArgs e)
         {

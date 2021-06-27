@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Text;
 using System.Threading.Tasks;
 using TFI_Agro_intelligent_DG.Negocio.Modelo;
@@ -11,13 +12,11 @@ namespace TFI_Agro_intelligent_DG.Datos.IManager
 
         Task<Carrito> GetCarrito(int id);
 
-        Task<Pack> GetPackById(int id);
+        int AgregarCarrito(string usuarioID);
 
-        Task<Pack> AddPack(Pack pack);
+        int AgregarCarritoDetalle(int packID, int cantidad, int carritoID);
 
-        Task<Pack> UpdatePack(Pack pack);
-
-        Task<Pack> DeletePack(int id);
+        string GetPedidoPDF(int carritoID);
 
     }
 }

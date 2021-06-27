@@ -9,7 +9,7 @@ using TFI_Agro_intelligent_DG.Models;
 
 namespace TFI_Agro_intelligent_DG.Account
 {
-    public partial class Register : Page
+    public partial class Register : BasePage
     {
         protected void CreateUser_Click(object sender, EventArgs e)
         {

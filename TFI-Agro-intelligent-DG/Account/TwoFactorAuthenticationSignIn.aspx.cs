@@ -11,7 +11,7 @@ using TFI_Agro_intelligent_DG.Models;
 
 namespace TFI_Agro_intelligent_DG.Account
 {
-    public partial class TwoFactorAuthenticationSignIn : System.Web.UI.Page
+    public partial class TwoFactorAuthenticationSignIn : BasePage
     {
         private ApplicationSignInManager signinManager;
         private ApplicationUserManager manager;

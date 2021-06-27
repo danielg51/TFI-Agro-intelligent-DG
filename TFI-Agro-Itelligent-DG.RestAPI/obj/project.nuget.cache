@@ -1,10 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "xT4WMZKU3xV2hw3kchFzEV2tr4R0EK6JMnHNxklkjilTYKN1SW70QG7IAZQlBSetRUjHRJnATApvG+zYSzBIwQ==",
+  "dgSpecHash": "Qh6NgBDuisP+9pmArvVRvN0m1c0fuq8YTy9Ry5SwUZKkhEZ4lCBMSvcgTHNk1A6DCX42N5iqcd+G/j/Aan7SHw==",
   "success": true,
   "projectFilePath": "C:\\Users\\502001192\\source\\repos\\TFI-Agro-intelligent-DG\\TFI-Agro-Itelligent-DG.RestAPI\\TFI-Agro-Itelligent-DG.RestAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\502001192\\.nuget\\packages\\dotnettoolkit\\1.7.0\\dotnettoolkit.1.7.0.nupkg.sha512",
+    "C:\\Users\\502001192\\.nuget\\packages\\htmlrenderer.core\\1.5.1-beta1\\htmlrenderer.core.1.5.1-beta1.nupkg.sha512",
+    "C:\\Users\\502001192\\.nuget\\packages\\htmlrenderer.pdfsharp\\1.5.1-beta1\\htmlrenderer.pdfsharp.1.5.1-beta1.nupkg.sha512",
     "C:\\Users\\502001192\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\502001192\\.nuget\\packages\\log4net\\2.0.8\\log4net.2.0.8.nupkg.sha512",
     "C:\\Users\\502001192\\.nuget\\packages\\microsoft.aspnetcore.authentication\\2.2.0\\microsoft.aspnetcore.authentication.2.2.0.nupkg.sha512",
@@ -60,6 +62,7 @@
     "C:\\Users\\502001192\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\502001192\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
     "C:\\Users\\502001192\\.nuget\\packages\\newtonsoft.json\\12.0.1\\newtonsoft.json.12.0.1.nupkg.sha512",
+    "C:\\Users\\502001192\\.nuget\\packages\\pdfsharp\\1.50.4000-beta3b\\pdfsharp.1.50.4000-beta3b.nupkg.sha512",
     "C:\\Users\\502001192\\.nuget\\packages\\runtime.native.system\\4.3.0\\runtime.native.system.4.3.0.nupkg.sha512",
     "C:\\Users\\502001192\\.nuget\\packages\\runtime.native.system.net.http\\4.0.1\\runtime.native.system.net.http.4.0.1.nupkg.sha512",
     "C:\\Users\\502001192\\.nuget\\packages\\runtime.native.system.security.cryptography\\4.0.0\\runtime.native.system.security.cryptography.4.0.0.nupkg.sha512",
@@ -156,5 +159,36 @@
     "C:\\Users\\502001192\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
     "C:\\Users\\502001192\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'HtmlRenderer.Core 1.5.1-beta1' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net5.0'. This package may not be fully compatible with your project.",
+      "libraryId": "HtmlRenderer.Core",
+      "targetGraphs": [
+        "net5.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'HtmlRenderer.PdfSharp 1.5.1-beta1' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net5.0'. This package may not be fully compatible with your project.",
+      "libraryId": "HtmlRenderer.PdfSharp",
+      "targetGraphs": [
+        "net5.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'PDFsharp 1.50.4000-beta3b' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net5.0'. This package may not be fully compatible with your project.",
+      "libraryId": "PDFsharp",
+      "targetGraphs": [
+        "net5.0"
+      ]
+    }
+  ]
 }

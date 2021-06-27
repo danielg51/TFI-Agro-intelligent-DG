@@ -10,7 +10,7 @@
 
     <div class="row" >
         <div class="col-md-4">
-            <h2>Sistema único de Riego</h2>
+            <h2><asp:Label ID="Label1" runat="server" Text="<%$ Resources:Resource.language, UniqueIrrigationSystem %>"></asp:Label></h2>
             <p>El riego de precisión utiliza las tecnologías disponibles para realizar una programación óptima del riego, estableciendo el momento, 
                 la frecuencia y el tiempo de riego adecuados según las características del cultivo.</p>
             <p>

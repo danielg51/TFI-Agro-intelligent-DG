@@ -19,7 +19,8 @@ namespace TFI_Agro_intelligent_DG
             AreaRegistration.RegisterAllAreas();
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
+
         }
-      
+        
     }
 }

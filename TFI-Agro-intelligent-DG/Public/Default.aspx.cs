@@ -12,7 +12,7 @@ using Owin;
 
 namespace TFI_Agro_intelligent_DG
 {
-    public partial class _Default : Page
+    public partial class _Default : BasePage
     {
         protected void Page_Load(object sender, EventArgs e)
         {

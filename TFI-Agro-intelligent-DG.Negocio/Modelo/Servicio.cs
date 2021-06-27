@@ -10,13 +10,14 @@ namespace TFI_Agro_intelligent_DG.Negocio.Modelo
 {
     public class Servicio
     {
-        public Servicio() {
+        public Servicio()
+        {
         }
         [Key]
         public int ServicioId { get; set; }
         public string Descripcion { get; set; }
-        public Sensor Sensor { get; set; }
-        public int SensorId { get; set; }
+        public Sensor? Sensor { get; set; }
+        public int? SensorId { get; set; }
         public ICollection<PackServicio> PackServicios { get; set; }
 
     }

@@ -8,7 +8,7 @@ using TFI_Agro_intelligent_DG.Models;
 
 namespace TFI_Agro_intelligent_DG.Account
 {
-    public partial class ForgotPassword : Page
+    public partial class ForgotPassword : BasePage
     {
         protected void Page_Load(object sender, EventArgs e)
         {

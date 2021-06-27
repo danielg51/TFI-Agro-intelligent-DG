@@ -9,6 +9,7 @@
       "TFI-Agro-intelligent-DG.Datos/1.0.0": {
         "dependencies": {
           "DotNetToolkit": "1.7.0",
+          "HtmlRenderer.PdfSharp": "1.5.1-beta1",
           "Microsoft.EntityFrameworkCore.Design": "5.0.2",
           "Microsoft.EntityFrameworkCore.SqlServer": "5.0.2",
           "Microsoft.EntityFrameworkCore.Tools": "5.0.2",
@@ -33,6 +34,26 @@
           "lib/netstandard2.0/DotNetToolkit.dll": {
             "assemblyVersion": "1.7.0.0",
             "fileVersion": "1.7.0.0"
+          }
+        }
+      },
+      "HtmlRenderer.Core/1.5.1-beta1": {
+        "runtime": {
+          "lib/net45/HtmlRenderer.dll": {
+            "assemblyVersion": "1.5.1.0",
+            "fileVersion": "1.5.1.0"
+          }
+        }
+      },
+      "HtmlRenderer.PdfSharp/1.5.1-beta1": {
+        "dependencies": {
+          "HtmlRenderer.Core": "1.5.1-beta1",
+          "PDFsharp": "1.50.4000-beta3b"
+        },
+        "runtime": {
+          "lib/net45/HtmlRenderer.PdfSharp.dll": {
+            "assemblyVersion": "1.5.1.0",
+            "fileVersion": "1.5.1.0"
           }
         }
       },
@@ -691,6 +712,26 @@
           "lib/netstandard2.0/Newtonsoft.Json.dll": {
             "assemblyVersion": "12.0.0.0",
             "fileVersion": "12.0.1.22727"
+          }
+        }
+      },
+      "PDFsharp/1.50.4000-beta3b": {
+        "runtime": {
+          "lib/net20/PdfSharp.Charting.dll": {
+            "assemblyVersion": "1.50.4000.0",
+            "fileVersion": "1.50.4000.0"
+          },
+          "lib/net20/PdfSharp.dll": {
+            "assemblyVersion": "1.50.4000.0",
+            "fileVersion": "1.50.4000.0"
+          }
+        },
+        "resources": {
+          "lib/net20/de/PdfSharp.Charting.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net20/de/PdfSharp.resources.dll": {
+            "locale": "de"
           }
         }
       },
@@ -1694,6 +1735,20 @@
       "path": "dotnettoolkit/1.7.0",
       "hashPath": "dotnettoolkit.1.7.0.nupkg.sha512"
     },
+    "HtmlRenderer.Core/1.5.1-beta1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-HmMbhQuB5oEZvKa5kBFL7zWEdpzN9qpj0aO48VQ5A5kAuz1Cd0tzf37tek81K9IqcOo32MZhD3HqsSKM3R1uBQ==",
+      "path": "htmlrenderer.core/1.5.1-beta1",
+      "hashPath": "htmlrenderer.core.1.5.1-beta1.nupkg.sha512"
+    },
+    "HtmlRenderer.PdfSharp/1.5.1-beta1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-3+w+AJDiDVzYRk3K3jvTo+4Lf4h6fsnUDEf6hWB1dBouWolaTAHRCdNNO8r/Du3cFlfNeeMXqIUuNUEuINsvHA==",
+      "path": "htmlrenderer.pdfsharp/1.5.1-beta1",
+      "hashPath": "htmlrenderer.pdfsharp.1.5.1-beta1.nupkg.sha512"
+    },
     "Humanizer.Core/2.8.26": {
       "type": "package",
       "serviceable": true,
@@ -2064,6 +2119,13 @@
       "sha512": "sha512-pBR3wCgYWZGiaZDYP+HHYnalVnPJlpP1q55qvVb+adrDHmFMDc1NAKio61xTwftK3Pw5h7TZJPJEEVMd6ty8rg==",
       "path": "newtonsoft.json/12.0.1",
       "hashPath": "newtonsoft.json.12.0.1.nupkg.sha512"
+    },
+    "PDFsharp/1.50.4000-beta3b": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-tUKPPJkLGSMqmjtpt9Bisph74oYlyBh4pkiGgojLKzqqNbrOMzupdIxA7Ge9MsFzkGptmc4OM3Yk0a2vwqIQqA==",
+      "path": "pdfsharp/1.50.4000-beta3b",
+      "hashPath": "pdfsharp.1.50.4000-beta3b.nupkg.sha512"
     },
     "runtime.native.System/4.3.0": {
       "type": "package",

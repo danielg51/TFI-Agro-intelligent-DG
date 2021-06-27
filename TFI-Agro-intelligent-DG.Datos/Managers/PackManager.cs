@@ -8,51 +8,56 @@ using TFI_Agro_intelligent_DG.Negocio.Modelo;
 
 namespace TFI_Agro_intelligent_DG.Datos.Managers
 {
- public class PackManager : TFI_Agro_intelligent_DG.Datos.IManager.IPackManager
-{
-    ServicioContext _context;
-
-    public PackManager(ServicioContext context)
+    public class PackManager : TFI_Agro_intelligent_DG.Datos.IManager.IPackManager
     {
-        _context = context;
-    }
+        ServicioContext _context;
 
-    public async Task<Pack> AddPack(Pack pack)
-    {
-        if (pack != null)
+        public PackManager(ServicioContext context)
         {
-            _context.Packs.Add(pack);
+            _context = context;
+        }
+
+        public async Task<Pack> AddPack(Pack pack)
+        {
+            if (pack != null)
+            {
+                _context.Packs.Add(pack);
+                await _context.SaveChangesAsync();
+                return pack;
+            }
+            return null;
+        }
+
+        public async Task<Pack> DeletePack(int id)
+        {
+            var pack = await _context.Packs.FindAsync(id);
+            _context.Entry(pack).State = EntityState.Deleted;
             await _context.SaveChangesAsync();
             return pack;
         }
-        return null;
-    }
 
-    public async Task<Pack> DeletePack(int id)
-    {
-        var pack = await _context.Packs.FindAsync(id);
-        _context.Entry(pack).State = EntityState.Deleted;
-        await _context.SaveChangesAsync();
-        return pack;
-    }
+        public async Task<Pack> GetPackById(int id)
+        {
+            var pack = await _context.Packs.FindAsync(id);
+            return pack;
+        }
 
-    public async Task<Pack> GetPackById(int id)
-    {
-        var pack = await _context.Packs.FindAsync(id);
-        return pack;
-    }
+        public async Task<IEnumerable<Pack>> GetPacks()
+        {
+            var packs = await _context.Packs
+                                        .Include(x => x.PackServicios)
+                                        .ThenInclude(x => x.Servicio)
+                                        .ThenInclude(x => x.Sensor)
+                                        .ToListAsync();
+            return packs;
+        }
 
-    public async Task<IEnumerable<Pack>> GetPacks()
-    {
-        var packs = await _context.Packs.ToListAsync();
-        return packs;
-    }
 
-    public async Task<Pack> UpdatePack(Pack pack)
-    {
-        _context.Entry(pack).State = EntityState.Modified;
-        await _context.SaveChangesAsync();
-        return pack;
+        public async Task<Pack> UpdatePack(Pack pack)
+        {
+            _context.Entry(pack).State = EntityState.Modified;
+            await _context.SaveChangesAsync();
+            return pack;
+        }
     }
-}
 }
